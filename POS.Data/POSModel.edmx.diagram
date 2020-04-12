@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d2720c1e5ee44de5b61b87d05c8e8b00" Name="Diagram1">
+        <EntityTypeShape EntityType="POSModel.Customer" Width="1.5" PointX="0.5" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="POSModel.Product" Width="1.5" PointX="7.75" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="POSModel.ProductCategory" Width="1.5" PointX="7.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="POSModel.SaleTransaction" Width="1.5" PointX="2.875" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="POSModel.SaleTransactionProduct" Width="1.5" PointX="5.125" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="POSModel.sysdiagram" Width="1.5" PointX="3.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="POSModel.User" Width="1.5" PointX="0.625" PointY="3.375" IsExpanded="true" />
+        <AssociationConnector Association="POSModel.FK_SaleTransaction_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="POSModel.FK_Product_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="POSModel.FK_SaleTransactionProduct_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="POSModel.FK_SaleTransaction_User" ManuallyRouted="false" />
+        <AssociationConnector Association="POSModel.FK_SaleTransactionProduct_SaleTransaction" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
