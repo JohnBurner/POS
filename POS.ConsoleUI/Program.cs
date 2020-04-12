@@ -31,7 +31,6 @@ namespace POS.ConsoleUI
             }
 
             Console.ReadKey();
-
         }
     }
 }
